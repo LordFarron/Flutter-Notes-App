@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:notes/Widgets/ActionButton.dart';
+import 'package:notes/Widgets/AppBottomBar.dart';
 import 'package:notes/Widgets/CenterBody.dart';
 import 'package:notes/Widgets/DrawerLeft.dart';
 
@@ -15,9 +16,14 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppTopBar(),
-      drawer: DrawerLeft(),
+      bottomNavigationBar: Stack(
+        overflow: Overflow.visible,
+        alignment: Alignment.bottomRight,
+        children: [AppBottomBar(), ActionButton()],
+      ),
+      //drawer: DrawerLeft(), I think i won't use drawer anymore
       body: CenterBody(),
-      floatingActionButton: ActionButton(),
+      //floatingActionButton:
     );
   }
 }

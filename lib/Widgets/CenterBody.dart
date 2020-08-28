@@ -56,17 +56,3 @@ class _NoteContent extends StatelessWidget {
     );
   }
 }
-
-/*Note getNotes() {
-  return [
-    Note(
-        title: "",
-        content: "",
-        colorValue: "",
-        creationTime: "",
-        updatedTime: "")
-  ];
-} */
-
-//this.title, this.content, this.colorValue, this.creationTime,
-//this.updatedTime
